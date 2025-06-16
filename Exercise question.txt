@@ -1,0 +1,125 @@
+Chapter 1: Introduction to Object-Oriented Programming
+✅ Exercise 1.1: Define a class Person with attributes name and age. Create an object and print its details.
+✅ Exercise 1.2: Modify the Person class to include a method greet() that prints a greeting message using the person's name.
+✅ Exercise 1.3: Create multiple instances of the Person class and store them in a list. Iterate over the list and call greet() for each person.
+
+Chapter 2: Classes and Objects
+✅ Exercise 2.1: Create a class Car with attributes brand, model, and year. Add a method display info() to print car details.
+✅ Exercise 2.2: Create multiple Car objects and call display info() for each one.
+✅ Exercise 2.3: Modify the Car class to include a method age() that calculates the car's age based on the current year.
+
+Chapter 3: Encapsulation
+✅ Exercise 3.1: Define a class BankAccount with attributes account_number, balance, and owner_name. Use private attributes (__balance).
+✅ Exercise 3.2: Add getter and setter methods to safely access and modify the balance.
+✅ Exercise 3.3: Add a deposit() and withdraw() method to the BankAccount class. Ensure the withdraw method checks for sufficient balance before allowing withdrawal.
+
+Chapter 4: Inheritance
+✅ Exercise 4.1: Create a base class Animal with attributes name and species. Define a method make_sound().
+✅ Exercise 4.2: Create two child classes: Dog and Cat, that inherit from Animal. Override the make_sound() method to return "Bark" for dogs and "Meow" for cats.
+✅ Exercise 4.3: Instantiate objects of Dog and Cat, and call their make_sound() methods.
+✅ Exercise 4.4: Modify Animal to include a method info() that prints details about the animal. Ensure it works for child classes too.
+✅ Exercise 4.5: Create a base class Vehicle with attributes brand and year.
+		  1. Define a method start_engine() that prints "Engine started".
+		  2. Use super() to call the base class constructor inside the child class.
+✅ Exercise 4.6: Create a child class Car that inherits from Vehicle.
+		  1. Add an attribute fuel_type.
+		  2. Override the start_engine() method to print "Car engine started with {fuel_type}".
+ 		  3. Ensure the constructor calls super() to initialize brand and year.
+✅ Exercise 4.7: Instantiate an object of Car with brand "Toyota", year 2022, and fuel type "Petrol". Call its start_engine() method.
+✅ Exercise 4.8: Modify the Vehicle class to include a method info() that prints "Brand: {brand}, Year: {year}". Use super() in the Car class to ensure it works correctly.
+✅ Exercise 4.9: Create two parent classes:
+		  1. Teacher → Method teach() prints "Teaching students".
+		  2. Writer → Method write() prints "Writing articles".
+		  Now, create a child class Professor that inherits from both Teacher and Writer.
+		  i. Add a method research() that prints "Conducting research".
+		  ii. Use super() to ensure all methods work properly.
+✅ Exercise 4.10: Instantiate a Professor object and call teach(), write(), and research().
+✅ Exercise 4.11: Create a class hierarchy:
+		   1. Base class: Device → Constructor prints "Device Initialized" and method power_on() prints "Device is turning on".
+		   2. Intermediate class: Computer (inherits from Device) → Constructor prints "Computer Initialized", method compute() prints "Computing tasks".
+		   3. Derived class: Laptop (inherits from Computer) → Constructor prints "Laptop Initialized", method portable() prints "Laptops are portable".
+	           # Use super() to ensure each constructor calls its parent class.
+✅ Exercise 4.12: Instantiate a Laptop object and call power_on(), compute(), and portable(). Observe how super() ensures the correct execution order.
+✅ Exercise 4.13: Create a Multiple + Multilevel Inheritance scenario:
+		   1. Class Person → Constructor prints "Person Initialized", method breathe() prints "Humans breathe".
+		   2. Class Athlete (inherits from Person) → Constructor prints "Athlete Initialized", method train() prints "Athlete is training".
+		   3. Class Student (inherits from Person) → Constructor prints "Student Initialized", method study() prints "Student is studying".
+		   4. Class SportsStudent (inherits from both Athlete and Student)
+		      i. Constructor prints "SportsStudent Initialized".
+		      ii. Method compete() prints "Competing in sports".
+		      iii. Use super() to call constructors in the correct order.
+✅ Exercise 4.14: Instantiate a SportsStudent object and call breathe(), train(), study(), and compete(). Observe how Method Resolution Order (MRO) works.
+
+Chapter 5: Polymorphism
+✅ Exercise 5.1: Define a function animal_sound() that takes an Animal object as input and calls its make_sound() method. Test it with different animal objects.
+✅ Exercise 5.2: Create a Shape class with a method area(). Implement Circle and Rectangle classes that override the area() method.
+✅ Exercise 5.3: Create a Vehicle base class with a method fuel_type(). Implement Car and Bike classes that override the method to return different fuel types.
+
+Chapter 6: Abstraction
+✅ Exercise 6.1: Create an abstract class Appliance with an abstract method turn_on().
+✅ Exercise 6.2: Create two child classes Fan and Light that implement the turn_on() method differently.
+✅ Exercise 6.3: Try to instantiate an object of Appliance. What happens?
+
+Chapter 7: Composition vs. Inheritance
+✅ Exercise 7.1: Create a class Engine with an attribute horsepower. Then, create a Car class that has an Engine object as an attribute (Composition).
+✅ Exercise 7.2: Modify the Car class to allow inheritance from a Vehicle class instead of using composition. Compare both approaches.
+✅ Exercise 7.3: Discuss a real-world example where composition is better than inheritance.
+
+Chapter 8: Magic Methods (Dunder Methods)
+✅ Exercise 8.1: Modify the Person class to include the __str__() method for better printing.
+✅ Exercise 8.2: Implement the __add__() method in a BankAccount class to allow merging of two accounts.
+✅ Exercise 8.3: Implement the __len__() method in a Book class to return the number of pages.
+✅ Exercise 8.4: Create a Vector class and implement __add__() and __sub__() to perform vector addition and subtraction.
+
+Chapter 9: Method Overriding and Super()
+✅ Exercise 9.1: Modify the Dog and Cat classes to call super().__init__() inside their constructors.
+✅ Exercise 9.2: Override the info() method in Dog and Cat to add additional details.
+✅ Exercise 9.3: Try calling super().info() from the overridden info() method.
+
+Chapter 10: Class and Static Methods
+✅ Exercise 10.1: Create a Student class with a class variable school_name. Define a change_school() class method to update this variable.
+✅ Exercise 10.2: Define a TemperatureConverter class with a static method celsius_to_fahrenheit().
+✅ Exercise 10.3: Call celsius_to_fahrenheit() without creating an instance of the class.
+
+Chapter 11: Multiple Inheritance and MRO
+✅ Exercise 11.1: Create a class Flyable with a method fly(). Create a class Bird with a method chirp(). Create a class Eagle that inherits from both and test its methods.
+✅ Exercise 11.2: Use the super() function in a multiple inheritance scenario and check the Method Resolution Order (MRO).
+✅ Exercise 11.3: Try inheriting from two classes that have a method with the same name. What happens?
+
+Chapter 12: Error Handling in OOP
+✅ Exercise 12.1: Modify the BankAccount class to raise a custom exception if withdrawal amount is greater than balance.
+✅ Exercise 12.2: Create a try-except block to handle errors when accessing a non-existent attribute in a class.
+✅ Exercise 12.3: Create a try-except block that catches a TypeError when performing an invalid operation on a class object.
+
+Chapter 13: Real-World Projects
+✅ Exercise 13.1: Build a Library Management System. Create Book and Library classes. Allow users to borrow and return books.
+✅ Exercise 13.2: Create a Personal Task Manager. Define a TaskManager class. Allow users to add, view, update, and delete tasks.
+✅ Exercise 13.3: Extend the Banking System. Add SavingsAccount and CheckingAccount with different features. Implement interest calculation for SavingsAccount.
+✅ Exercise 13.4: Implement a Notification System
+
+Use the Observer Pattern to notify users when their loan is due.
+Final Challenge: Build a Full OOP Python Application
+🔹 Pick any real-world project (e.g., Inventory Management, Hospital Management, Hotel Booking System).
+🔹 Apply all OOP principles: Encapsulation, Inheritance, Polymorphism, Abstraction.
+🔹 Implement error handling, dunder methods, and design patterns.
+
+Question:
+
+At a university, there is a system for managing courses, students, and instructors. 
+Each course has a unique course ID, a title, and an instructor assigned to it. 
+Students can enroll in multiple courses, and each student has a student ID, a name, and a list of enrolled courses.
+Instructors have an instructor ID, a name, and a list of courses they teach.
+
+The university has a course management system that helps manage these entities.
+
+The system should allow adding new courses by providing a course object.
+
+The system should allow an instructor to assign themselves to a course.
+
+A student should be able to enroll in a course if it exists.
+
+The system should provide a search function to check if a course exists by its title and return True if found, 
+otherwise False.
+
+
+Model this scenario using object-oriented programming (OOP) and write the Python code implementing this system.
