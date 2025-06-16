@@ -38,8 +38,3 @@ Welcome to the ultimate learning resource for **Object-Oriented Programming (OOP
 - 🏗️ **Intermediate Python Programmers**: Strengthen your understanding with advanced concepts.
 - 📚 **Students**: Useful for coursework, assignments, or exam prep.
 - 🎓 **Self-learners**: Includes exercises and projects to practice on your own.
-
----
-
-## 📂 Repository Structure
-
