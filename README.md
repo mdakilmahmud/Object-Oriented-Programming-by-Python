@@ -1,4 +1,4 @@
-# 🐍 Object-Oriented Programming in Python – From Basics to Advanced
+# 🐍 Object-Oriented Programming of Python – From Basics to Advanced
 
 Welcome to the ultimate learning resource for **Object-Oriented Programming (OOP) in Python**! Whether you're a beginner starting with the basics or an intermediate learner aiming to master advanced topics, this repository is crafted to guide you step-by-step with clear explanations, real-world examples, and hands-on exercises.
 
